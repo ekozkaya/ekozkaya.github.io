@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "posts/first-post.html",
+    "href": "posts/first-post.html",
+    "title": "First Post: Building My Website",
+    "section": "",
+    "text": "This week I built my Psych 390 website using Quarto and learned about github"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Eda ozkaya",
+    "section": "",
+    "text": "A student from University of Waterloo, majoring in Psychology, minoring in Human Resources and doing Research Intensive Program"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, I’m Eda Ozkaya, a student currently in University of Waterloo\nIn the future, I plan to expand this site to include further academic work and research"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "First Post"
+  },
+  {
+    "objectID": "blog.html#posts",
+    "href": "blog.html#posts",
+    "title": "Blog",
+    "section": "",
+    "text": "First Post"
+  },
+  {
+    "objectID": "link.html",
+    "href": "link.html",
+    "title": "Website Link",
+    "section": "",
+    "text": "Click here to view my website:\nMy website"
+  }
+]

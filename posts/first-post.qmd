@@ -1,0 +1,6 @@
+---
+title: "First Post: Building My Website"
+date: 2026-01-27
+---
+
+This week I built my Psych 390 website using Quarto and learned about github

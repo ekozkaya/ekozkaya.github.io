@@ -1,0 +1,7 @@
+---
+title: "Blog"
+---
+
+
+## Posts
+- [First Post](posts/first-post.qmd)

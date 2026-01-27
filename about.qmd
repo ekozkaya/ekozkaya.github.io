@@ -1,0 +1,7 @@
+---
+title: "About"
+---
+
+Hi, I'm **Eda Ozkaya**, a student currently in University of Waterloo
+
+In the future, I plan to expand this site to include further academic work and research
