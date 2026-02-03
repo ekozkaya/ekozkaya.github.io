@@ -6,4 +6,19 @@ Hi, I'm **Eda Ozkaya**, a student currently in University of Waterloo
 
 In the future, I plan to expand this site to include further academic work and research
 
-![Eda Ozkaya](images/image1.png){width=250}
+## About Me
+
+I’m currently studying at the University of Waterloo, where I’m involved in interdisciplinary research blending neuroscience, AI, and human development. I love working on projects that connect data, storytelling, and design.
+
+My background spans from teaching to software development, and I enjoy building things that help people learn, grow, and connect.
+
+## Research & Projects
+
+Some of the things I’m currently working on:
+
+## Contact
+
+Feel free to reach out!  
+**Email**: eda.ozkaya@example.com  
+
+![Eda Ozkaya](images/image1.png){width=400}

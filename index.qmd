@@ -1,8 +1,13 @@
 ---
-title: "Eda ozkaya"
+title: "Index"
 ---
 
-A student from University of Waterloo, majoring in Psychology, minoring in Human Resources and doing Research Intensive Program
+##Welcome
 
+Hi, I’m Eda Ozkaya, who is a passionate learner, researcher, and creative thinker currently exploring the intersections of psychology, technology, and education. This website is a space to share my projects, writing, and ideas.
+
+Currently I am student from University of Waterloo, majoring in Psychology, minoring in Human Resources and doing Research Intensive Program
+
+For more information:
 [🔗 Connect with me on LinkedIn](https://www.linkedin.com/in/eda-ozkaya-3404a9358/)
 

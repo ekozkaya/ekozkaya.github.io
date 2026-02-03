@@ -6,40 +6,40 @@
 
 /* to change the color of content*/
 .content {
- color: rgb(192, 231, 224);
+ color: rgb(35, 0, 101);
  
 }
 
 /* to change the color of background*/
 body{
-background-color: #091630; 
+background-color: #ffffff; 
 }
 
 /* to change the color of link*/
 a {
-  color: white;
+  color: rgb(3, 9, 61);
 }
 
 /* to change the color of link when hovering*/
 a:hover {
-  color: #dbeafe;
+  color: #042d62;
   text-decoration: underline;
 }
 
 /* to change the color of title*/
 h2 {
-  color: #edf0f4;
+  color: #003375;
 }
 
 /* to change the color of | blog*/
 nav#TOC li a,
 nav#TOC .nav-link {
-  color: white !important;
+  color: rgb(0, 12, 92) !important;
 }
 
 #quarto-margin-sidebar nav#TOC a.nav-link:hover,
 #quarto-margin-sidebar nav#TOC li a:hover {
-  color: #dbeafe !important;
+  color: #021f46 !important;
   text-decoration: underline !important;
 }
 

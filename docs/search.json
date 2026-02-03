@@ -2,23 +2,23 @@
   {
     "objectID": "posts/first-post.html",
     "href": "posts/first-post.html",
-    "title": "First Post: Building My Website",
+    "title": "Why I am Starting this Blog",
     "section": "",
-    "text": "This week I built my Psych 390 website using Quarto and learned about github"
+    "text": "Why I am Starting this Blog\nThis Blog is going to be used for my thoughts and to think out loud.\nI am starting this to give myself permission to explore ideas that are not fully formed, maybe questions or research questions I might have.\nI plan to write about questions I do not have answers to, about things that might not yet have answers. Maybe reflective, analytical or even personal. I will try to be honest in my attempts.\nThis is not a place for polished arguments or final conclusions. I will place my curiosities and patterns I notice. If you are reading this, you are welcome to think alongside me. No need to agree or debate not to process and maybe have your own thoughts."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Eda ozkaya",
+    "title": "Index",
     "section": "",
-    "text": "A student from University of Waterloo, majoring in Psychology, minoring in Human Resources and doing Research Intensive Program\n🔗 Connect with me on LinkedIn"
+    "text": "##Welcome\nHi, I’m Eda Ozkaya, who is a passionate learner, researcher, and creative thinker currently exploring the intersections of psychology, technology, and education. This website is a space to share my projects, writing, and ideas.\nCurrently I am student from University of Waterloo, majoring in Psychology, minoring in Human Resources and doing Research Intensive Program\nFor more information: 🔗 Connect with me on LinkedIn"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Hi, I’m Eda Ozkaya, a student currently in University of Waterloo\nIn the future, I plan to expand this site to include further academic work and research\n\n\n\nEda Ozkaya"
+    "text": "Hi, I’m Eda Ozkaya, a student currently in University of Waterloo\nIn the future, I plan to expand this site to include further academic work and research"
   },
   {
     "objectID": "blog.html",
@@ -40,5 +40,26 @@
     "title": "Website Link",
     "section": "",
     "text": "Click here to view my website:\nMy website"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About",
+    "section": "About Me",
+    "text": "About Me\nI’m currently studying at the University of Waterloo, where I’m involved in interdisciplinary research blending neuroscience, AI, and human development. I love working on projects that connect data, storytelling, and design.\nMy background spans from teaching to software development, and I enjoy building things that help people learn, grow, and connect."
+  },
+  {
+    "objectID": "about.html#research-projects",
+    "href": "about.html#research-projects",
+    "title": "About",
+    "section": "Research & Projects",
+    "text": "Research & Projects\nSome of the things I’m currently working on:"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\nFeel free to reach out!\nEmail: eda.ozkaya@example.com\n\n\n\nEda Ozkaya"
   }
 ]

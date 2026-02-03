@@ -17,9 +17,7 @@ website:
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: journal
     css: custom.css
     toc: true
 

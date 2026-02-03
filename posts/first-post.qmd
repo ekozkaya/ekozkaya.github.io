@@ -1,6 +1,16 @@
 ---
-title: "First Post: Building My Website"
+title: "Why I am Starting this Blog"
+author: "Eda Ozkaya"
 date: 2026-01-27
+categories: [thoughts, meta]
 ---
 
-This week I built my Psych 390 website using Quarto and learned about github
+Why I am Starting this Blog
+
+This Blog is going to be used for my thoughts and to think out loud.
+
+I am starting this to give myself permission to explore ideas that are not fully formed, maybe questions or research questions I might have.
+
+I plan to write about questions I do not have answers to, about things that might not yet have answers. Maybe reflective, analytical or even personal. I will try to be honest in my attempts.
+
+This is not a place for polished arguments or final conclusions. I will place my curiosities and patterns I notice. If you are reading this, you are welcome to think alongside me. No need to agree or debate not to process and maybe have your own thoughts. 
