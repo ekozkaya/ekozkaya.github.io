@@ -10,10 +10,14 @@ website:
         text: Home
       - href: about.qmd
         text: About
-      - href: blog.qmd
+      - href: posts/index.qmd
         text: Blog
       
-    
+    collections:
+      blog:
+        type: [posts]
+        path: blog
+        sort: date
 
 format:
   html:
