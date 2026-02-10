@@ -5,9 +5,7 @@ date: 2026-01-27
 categories: [thoughts, meta]
 ---
 
-Why I am Starting this Blog
-
-This Blog is going to be used for my thoughts and to think out loud.
+Why I am Starting this Blog. This Blog is going to be used for my thoughts and to think out loud.
 
 I am starting this to give myself permission to explore ideas that are not fully formed, maybe questions or research questions I might have.
 
