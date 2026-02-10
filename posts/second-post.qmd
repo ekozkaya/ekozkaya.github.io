@@ -1,5 +1,8 @@
 ---
-title: "Practice GGPlot"
+title: "GG Plot Practice"
+author: "Eda Ozkaya"
+date: 2026-02-10
+categories: [graph, chart]
 format:
   html:
     embed-resources: true
