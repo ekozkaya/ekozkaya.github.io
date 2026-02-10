@@ -1,31 +1,24 @@
 [
   {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "Blog",
+    "objectID": "posts/second-post.html",
+    "href": "posts/second-post.html",
+    "title": "GG Plot Practice",
     "section": "",
-    "text": "Practice GGPlot\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhy I am Starting this Blog\n\n\n\nthoughts\n\nmeta\n\n\n\n\n\n\n\n\n\nJan 27, 2026\n\n\nEda Ozkaya\n\n\n\n\n\nNo matching items"
+    "text": "Me and a friend worked on a ggplot, learnt how to code and also tried to fold code. These are the results. From the ggplot examples, we are choosing the lollipop chart. Here is the link: https://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html#Lollipop%20Chart\n\n\nCode\n#│ code-fold: true\n#│ code-summary: \"Show the code\"\nlibrary(ggplot2)\ntheme_set(theme_bw())\n\ncty_mpg &lt;- data.frame(\n  make = c(\"Chevrolet\", \"Audi\", \"Toyota\", \"Honda\"),\n  mileage = c(15, 17.5, 18, 24)\n)\n\nggplot(cty_mpg, aes(x = make, y = mileage)) + \n  geom_point(size = 3) + \n  geom_segment(aes(x = make,\n                   xend = make,\n                   y = 0,\n                   yend = mileage)) + \n  labs(title = \"Lollipop Chart\", \n       subtitle = \"Make Vs Avg. Mileage\", \n       caption = \"source: mpg\") + \n  theme(axis.text.x = element_text(angle = 65, vjust = 0.6))"
   },
   {
-    "objectID": "link.html",
-    "href": "link.html",
-    "title": "Website Link",
+    "objectID": "posts/first-post.html",
+    "href": "posts/first-post.html",
+    "title": "Why I am Starting this Blog",
     "section": "",
-    "text": "Click here to view my website:\nMy website"
+    "text": "Why I am Starting this Blog. This Blog is going to be used for my thoughts and to think out loud.\nI am starting this to give myself permission to explore ideas that are not fully formed, maybe questions or research questions I might have.\nI plan to write about questions I do not have answers to, about things that might not yet have answers. Maybe reflective, analytical or even personal. I will try to be honest in my attempts.\nThis is not a place for polished arguments or final conclusions. I will place my curiosities and patterns I notice. If you are reading this, you are welcome to think alongside me. No need to agree or debate not to process and maybe have your own thoughts."
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Index",
     "section": "",
-    "text": "First Post"
-  },
-  {
-    "objectID": "blog.html#posts",
-    "href": "blog.html#posts",
-    "title": "Blog",
-    "section": "",
-    "text": "First Post"
+    "text": "##Welcome\nHi, I’m Eda Ozkaya, who is a passionate learner, researcher, and creative thinker currently exploring the intersections of psychology, technology, and education. This website is a space to share my projects, writing, and ideas.\nCurrently I am student from University of Waterloo, majoring in Psychology, minoring in Human Resources and doing Research Intensive Program\nFor more information: 🔗 Connect with me on LinkedIn"
   },
   {
     "objectID": "about.html",
@@ -56,17 +49,31 @@
     "text": "Contact\nFeel free to reach out!\nEmail: eda.ozkaya@example.com\n\n\n\nEda Ozkaya"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Index",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "##Welcome\nHi, I’m Eda Ozkaya, who is a passionate learner, researcher, and creative thinker currently exploring the intersections of psychology, technology, and education. This website is a space to share my projects, writing, and ideas.\nCurrently I am student from University of Waterloo, majoring in Psychology, minoring in Human Resources and doing Research Intensive Program\nFor more information: 🔗 Connect with me on LinkedIn"
+    "text": "First Post"
   },
   {
-    "objectID": "posts/first-post.html",
-    "href": "posts/first-post.html",
-    "title": "Why I am Starting this Blog",
+    "objectID": "blog.html#posts",
+    "href": "blog.html#posts",
+    "title": "Blog",
     "section": "",
-    "text": "Why I am Starting this Blog\nThis Blog is going to be used for my thoughts and to think out loud.\nI am starting this to give myself permission to explore ideas that are not fully formed, maybe questions or research questions I might have.\nI plan to write about questions I do not have answers to, about things that might not yet have answers. Maybe reflective, analytical or even personal. I will try to be honest in my attempts.\nThis is not a place for polished arguments or final conclusions. I will place my curiosities and patterns I notice. If you are reading this, you are welcome to think alongside me. No need to agree or debate not to process and maybe have your own thoughts."
+    "text": "First Post"
+  },
+  {
+    "objectID": "link.html",
+    "href": "link.html",
+    "title": "Website Link",
+    "section": "",
+    "text": "Click here to view my website:\nMy website"
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "GG Plot Practice\n\n\n\n\n\n\ngraph\n\n\nchart\n\n\n\n\n\n\n\n\n\nFeb 10, 2026\n\n\nEda Ozkaya\n\n\n\n\n\n\n\n\n\n\n\n\nWhy I am Starting this Blog\n\n\n\n\n\n\nthoughts\n\n\nmeta\n\n\n\n\n\n\n\n\n\nJan 27, 2026\n\n\nEda Ozkaya\n\n\n\n\n\n\nNo matching items"
   }
 ]
