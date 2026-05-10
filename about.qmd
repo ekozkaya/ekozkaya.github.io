@@ -15,10 +15,16 @@ My background spans from teaching to software development, and I enjoy building 
 ## Research & Projects
 
 Some of the things I’m currently working on:
+- My thesis which will be around cognitive science
+- Finishing my HR minor and working towards CHRP
+- Enhancing my coding and data analysis knowledge by learning VLOOKUPS and Pivot tables
+- Currently enhancing my knowledge on PowerBI and Tableau using their training
+
+Using those courses or additional things I learn, I will be putting on my blogs.
 
 ## Contact
 
 Feel free to reach out!  
-**Email**: eda.ozkaya@example.com  
+**Email**: edakubra2004@gmail.com
 
 ![Eda Ozkaya](images/image1.png){width=400}

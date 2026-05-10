@@ -11,7 +11,7 @@ format:
   
 ---
 
-Me and a friend worked on a ggplot, learnt how to code and also tried to fold code. These are the results. From the ggplot examples, we are choosing the lollipop chart. Here is the link: https://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html#Lollipop%20Chart
+Me and a friend worked on a ggplot, learnt how to code and also tried to fold code. These are the results. From the ggplot examples, we are choosing the lollipop chart. Here is the link: [R code] (https://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html#Lollipop%20Chart)
 
 ```{r}
 #│ code-fold: true

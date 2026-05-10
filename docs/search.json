@@ -1,24 +1,108 @@
 [
   {
-    "objectID": "posts/second-post.html",
-    "href": "posts/second-post.html",
-    "title": "GG Plot Practice",
+    "objectID": "posts/third-post.html",
+    "href": "posts/third-post.html",
+    "title": "Using PowerBI for Analytics Dashboard",
     "section": "",
-    "text": "Me and a friend worked on a ggplot, learnt how to code and also tried to fold code. These are the results. From the ggplot examples, we are choosing the lollipop chart. Here is the link: https://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html#Lollipop%20Chart\n\n\nCode\n#│ code-fold: true\n#│ code-summary: \"Show the code\"\nlibrary(ggplot2)\ntheme_set(theme_bw())\n\ncty_mpg &lt;- data.frame(\n  make = c(\"Chevrolet\", \"Audi\", \"Toyota\", \"Honda\"),\n  mileage = c(15, 17.5, 18, 24)\n)\n\nggplot(cty_mpg, aes(x = make, y = mileage)) + \n  geom_point(size = 3) + \n  geom_segment(aes(x = make,\n                   xend = make,\n                   y = 0,\n                   yend = mileage)) + \n  labs(title = \"Lollipop Chart\", \n       subtitle = \"Make Vs Avg. Mileage\", \n       caption = \"source: mpg\") + \n  theme(axis.text.x = element_text(angle = 65, vjust = 0.6))"
+    "text": "The goal of this project was to analyze employee attrition using Power BI and identify factors that may contribute to employee turnover. The dashboard helps HR understand workforce trends and make better retention decisions.\n\n\n\nI used an HR employee attrition dataset containing information such as - Employee age - Department - Job role and etc.\n\n\n\nSo first step, I used Kaggle to download an HR analytics attrition for practice. Downloading this [file] (https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset?resource=download&select=WA_Fn-UseC_-HR-Employee-Attrition.csv) called WA_Fn-UseC_-HR-Employee-Attrition.csv. After downloading it I used get data and added into the CSV upload document section.\nAfter loading it I checked if the ABC icon text type columns and 123 icon number columns were correctly put. After that I created a report which made it into a clean main report workspace.\n\n\n\nI created three main KPI cards at the top of the dashboard. \n\n\nTotal employees which shows the number of employees presented in the dataset, the purpose of this was to understand workforce size.\n\n\n\nEmployees left shows the number of employeed using the attrition filter, to show how many employees left the company.\n\n\n\nI created a DAX measure to calculate the percentage of employees who left which I will put in here: AttritionRate = DIVIDE( CALCULATE( COUNT(‘WA_Fn-UseC_-HR-Employee-Attrition’[EmployeeNumber]), ‘WA_Fn-UseC_-HR-Employee-Attrition’[Attrition] = “Yes” ), COUNT(‘WA_Fn-UseC_-HR-Employee-Attrition’[EmployeeNumber]) )\nWhich resulted in an Attrition Rate of 16.12% (I set it to be a percentage instead of a decimal)\nThe purpose of this was to measure overall employee turnover rate. Meaning that approximately 1 out of every 6 employees left the organization.\n\n\n\n\n\nI created a bar chart showing employees who left by department X-axis: department Y-axis: count of EmployeeNumber Filter: Attrition = Yes\nPurpose of this was to identify which departments have the highest employee turnover rate.\nConcluding that Research & Development and Sales showed the highest number of employees leaving. Human resources had the lowest attrition count. This could be due to the fact that technical and sales-related departments may experience higher workpload pressure or employee burnout.\n\n\n\n\nI created a chart showing employees overtime status.\nFields used: X-axis: overtime Y-axis: Count of EmployeeNumber\nThis helped compare employees who work overtime with those who do not. Which helps HR explore whether workload and overtime may be related to overall employee retention. Attrition for employees working overtime was noticeably high. Overtime may contribute to work-life imbalance, stress and reduced employee retention.\n\n\n\n\nDAX used: IncomeGroup = SWITCH( TRUE(), ‘WA_Fn-UseC_-HR-Employee-Attrition’[MonthlyIncome] &lt; 4000, “Low Income”, ‘WA_Fn-UseC_-HR-Employee-Attrition’[MonthlyIncome] &lt; 8000, “Medium Income”, ‘WA_Fn-UseC_-HR-Employee-Attrition’[MonthlyIncome] &lt; 12000, “High Income”, “Very High Income” )\nFields used: X-axis: IncomeGroup Y-axis: Count of EmployeeNumber Filter: Attrition = Yes\nPurpose of this was to analyze whether lower-income employees are more likely to leave. Attrition was higher among low-income employees, suggesting compensation may affect retention. Attrition decreased as income increased. Concluding that compensation level appears strongly related to ecmployee retention. Lower-paid employees may seek better opportunities elsewhere. Of course there may be other factors contributing like years spent in the company.\n\n\n\n\nI created a chart using job satisfaction levels.\nFields used: X-axis: JobSatisfaction Y-axis: Count of EmployeeNumber Filter: Attrition = Yes\nThis was to examin whether employee satisfaction is connected to turnover. This will help understand whether lower satisfaction levels are associated with employees leaving. Employees with lower job satisfaction showed notable attrition. Satisfaction levels influenced employee retention patterns. Employee engagement and satisfaction programs may help reduce turnover.\n\n\n\n\nJob role chart fields used: X-axis: JobRole Y-axis: Count of EmployeeNumber\nThis was to understand which job roles have the largest number of employees. Which would help identify large job categories and potential areas where attrition may have a bigger business impact\nSales executive and Research Scientist roles had the largest workforce, while some job roles had much smaller populations. Larger job categories may require more retention monitoring because turnover impact might be higher.\n\n\n\n\nI created a line chart using years at company.\nFields used: X-Axis: YearsAtCompany Y-Axis: Count of EmployeeNumber Filter: Attrition = Yes\nThe purpose of this was to understand when employees are most likely to leave. Attrition appears higher during early years of employement, suggesting onboarding, career development, or early engagement may be important retention areas."
   },
   {
-    "objectID": "posts/first-post.html",
-    "href": "posts/first-post.html",
-    "title": "Why I am Starting this Blog",
+    "objectID": "posts/third-post.html#project-goal",
+    "href": "posts/third-post.html#project-goal",
+    "title": "Using PowerBI for Analytics Dashboard",
     "section": "",
-    "text": "Why I am Starting this Blog. This Blog is going to be used for my thoughts and to think out loud.\nI am starting this to give myself permission to explore ideas that are not fully formed, maybe questions or research questions I might have.\nI plan to write about questions I do not have answers to, about things that might not yet have answers. Maybe reflective, analytical or even personal. I will try to be honest in my attempts.\nThis is not a place for polished arguments or final conclusions. I will place my curiosities and patterns I notice. If you are reading this, you are welcome to think alongside me. No need to agree or debate not to process and maybe have your own thoughts."
+    "text": "The goal of this project was to analyze employee attrition using Power BI and identify factors that may contribute to employee turnover. The dashboard helps HR understand workforce trends and make better retention decisions."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Index",
+    "objectID": "posts/third-post.html#dataset-used",
+    "href": "posts/third-post.html#dataset-used",
+    "title": "Using PowerBI for Analytics Dashboard",
     "section": "",
-    "text": "##Welcome\nHi, I’m Eda Ozkaya, who is a passionate learner, researcher, and creative thinker currently exploring the intersections of psychology, technology, and education. This website is a space to share my projects, writing, and ideas.\nCurrently I am student from University of Waterloo, majoring in Psychology, minoring in Human Resources and doing Research Intensive Program\nFor more information: 🔗 Connect with me on LinkedIn"
+    "text": "I used an HR employee attrition dataset containing information such as - Employee age - Department - Job role and etc."
+  },
+  {
+    "objectID": "posts/third-post.html#step-1--data-import",
+    "href": "posts/third-post.html#step-1--data-import",
+    "title": "Using PowerBI for Analytics Dashboard",
+    "section": "",
+    "text": "So first step, I used Kaggle to download an HR analytics attrition for practice. Downloading this [file] (https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset?resource=download&select=WA_Fn-UseC_-HR-Employee-Attrition.csv) called WA_Fn-UseC_-HR-Employee-Attrition.csv. After downloading it I used get data and added into the CSV upload document section.\nAfter loading it I checked if the ABC icon text type columns and 123 icon number columns were correctly put. After that I created a report which made it into a clean main report workspace."
+  },
+  {
+    "objectID": "posts/third-post.html#step-2---kpi-cards",
+    "href": "posts/third-post.html#step-2---kpi-cards",
+    "title": "Using PowerBI for Analytics Dashboard",
+    "section": "",
+    "text": "I created three main KPI cards at the top of the dashboard. \n\n\nTotal employees which shows the number of employees presented in the dataset, the purpose of this was to understand workforce size.\n\n\n\nEmployees left shows the number of employeed using the attrition filter, to show how many employees left the company.\n\n\n\nI created a DAX measure to calculate the percentage of employees who left which I will put in here: AttritionRate = DIVIDE( CALCULATE( COUNT(‘WA_Fn-UseC_-HR-Employee-Attrition’[EmployeeNumber]), ‘WA_Fn-UseC_-HR-Employee-Attrition’[Attrition] = “Yes” ), COUNT(‘WA_Fn-UseC_-HR-Employee-Attrition’[EmployeeNumber]) )\nWhich resulted in an Attrition Rate of 16.12% (I set it to be a percentage instead of a decimal)\nThe purpose of this was to measure overall employee turnover rate. Meaning that approximately 1 out of every 6 employees left the organization."
+  },
+  {
+    "objectID": "posts/third-post.html#step-3---attrition-by-department",
+    "href": "posts/third-post.html#step-3---attrition-by-department",
+    "title": "Using PowerBI for Analytics Dashboard",
+    "section": "",
+    "text": "I created a bar chart showing employees who left by department X-axis: department Y-axis: count of EmployeeNumber Filter: Attrition = Yes\nPurpose of this was to identify which departments have the highest employee turnover rate.\nConcluding that Research & Development and Sales showed the highest number of employees leaving. Human resources had the lowest attrition count. This could be due to the fact that technical and sales-related departments may experience higher workpload pressure or employee burnout."
+  },
+  {
+    "objectID": "posts/third-post.html#step-4---employee-overtime-distribution",
+    "href": "posts/third-post.html#step-4---employee-overtime-distribution",
+    "title": "Using PowerBI for Analytics Dashboard",
+    "section": "",
+    "text": "I created a chart showing employees overtime status.\nFields used: X-axis: overtime Y-axis: Count of EmployeeNumber\nThis helped compare employees who work overtime with those who do not. Which helps HR explore whether workload and overtime may be related to overall employee retention. Attrition for employees working overtime was noticeably high. Overtime may contribute to work-life imbalance, stress and reduced employee retention."
+  },
+  {
+    "objectID": "posts/third-post.html#step-5---attrition-by-income-group",
+    "href": "posts/third-post.html#step-5---attrition-by-income-group",
+    "title": "Using PowerBI for Analytics Dashboard",
+    "section": "",
+    "text": "DAX used: IncomeGroup = SWITCH( TRUE(), ‘WA_Fn-UseC_-HR-Employee-Attrition’[MonthlyIncome] &lt; 4000, “Low Income”, ‘WA_Fn-UseC_-HR-Employee-Attrition’[MonthlyIncome] &lt; 8000, “Medium Income”, ‘WA_Fn-UseC_-HR-Employee-Attrition’[MonthlyIncome] &lt; 12000, “High Income”, “Very High Income” )\nFields used: X-axis: IncomeGroup Y-axis: Count of EmployeeNumber Filter: Attrition = Yes\nPurpose of this was to analyze whether lower-income employees are more likely to leave. Attrition was higher among low-income employees, suggesting compensation may affect retention. Attrition decreased as income increased. Concluding that compensation level appears strongly related to ecmployee retention. Lower-paid employees may seek better opportunities elsewhere. Of course there may be other factors contributing like years spent in the company."
+  },
+  {
+    "objectID": "posts/third-post.html#step-6---attrition-by-job-satisfaction",
+    "href": "posts/third-post.html#step-6---attrition-by-job-satisfaction",
+    "title": "Using PowerBI for Analytics Dashboard",
+    "section": "",
+    "text": "I created a chart using job satisfaction levels.\nFields used: X-axis: JobSatisfaction Y-axis: Count of EmployeeNumber Filter: Attrition = Yes\nThis was to examin whether employee satisfaction is connected to turnover. This will help understand whether lower satisfaction levels are associated with employees leaving. Employees with lower job satisfaction showed notable attrition. Satisfaction levels influenced employee retention patterns. Employee engagement and satisfaction programs may help reduce turnover."
+  },
+  {
+    "objectID": "posts/third-post.html#step-7---employee-distribution-by-job-role",
+    "href": "posts/third-post.html#step-7---employee-distribution-by-job-role",
+    "title": "Using PowerBI for Analytics Dashboard",
+    "section": "",
+    "text": "Job role chart fields used: X-axis: JobRole Y-axis: Count of EmployeeNumber\nThis was to understand which job roles have the largest number of employees. Which would help identify large job categories and potential areas where attrition may have a bigger business impact\nSales executive and Research Scientist roles had the largest workforce, while some job roles had much smaller populations. Larger job categories may require more retention monitoring because turnover impact might be higher."
+  },
+  {
+    "objectID": "posts/third-post.html#step-8---attrition-trend-by-years-at-company",
+    "href": "posts/third-post.html#step-8---attrition-trend-by-years-at-company",
+    "title": "Using PowerBI for Analytics Dashboard",
+    "section": "",
+    "text": "I created a line chart using years at company.\nFields used: X-Axis: YearsAtCompany Y-Axis: Count of EmployeeNumber Filter: Attrition = Yes\nThe purpose of this was to understand when employees are most likely to leave. Attrition appears higher during early years of employement, suggesting onboarding, career development, or early engagement may be important retention areas."
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Using PowerBI for Analytics Dashboard\n\n\n\nHRM\n\nchart\n\n\n\n\n\n\n\n\n\nMay 1, 2026\n\n\nEda Ozkaya\n\n\n\n\n\n\n\n\n\n\n\n\nGG Plot Practice\n\n\n\ngraph\n\nchart\n\n\n\n\n\n\n\n\n\nFeb 10, 2026\n\n\nEda Ozkaya\n\n\n\n\n\n\n\n\n\n\n\n\nWhy I am Starting this Blog\n\n\n\nthoughts\n\nmeta\n\n\n\n\n\n\n\n\n\nJan 27, 2026\n\n\nEda Ozkaya\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "link.html",
+    "href": "link.html",
+    "title": "Website Link",
+    "section": "",
+    "text": "Click here to view my website:\nMy website"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "First Post"
+  },
+  {
+    "objectID": "blog.html#posts",
+    "href": "blog.html#posts",
+    "title": "Blog",
+    "section": "",
+    "text": "First Post"
   },
   {
     "objectID": "about.html",
@@ -39,41 +123,41 @@
     "href": "about.html#research-projects",
     "title": "About",
     "section": "Research & Projects",
-    "text": "Research & Projects\nSome of the things I’m currently working on:"
+    "text": "Research & Projects\nSome of the things I’m currently working on: - My thesis which will be around cognitive science - Finishing my HR minor and working towards CHRP - Enhancing my coding and data analysis knowledge by learning VLOOKUPS and Pivot tables - Currently enhancing my knowledge on PowerBI and Tableau using their training\nUsing those courses or additional things I learn, I will be putting on my blogs."
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
     "title": "About",
     "section": "Contact",
-    "text": "Contact\nFeel free to reach out!\nEmail: eda.ozkaya@example.com\n\n\n\nEda Ozkaya"
+    "text": "Contact\nFeel free to reach out!\nEmail: edakubra2004@gmail.com\n\n\n\nEda Ozkaya"
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Index",
     "section": "",
-    "text": "First Post"
+    "text": "Hi, I’m Eda Ozkaya, who is a passionate learner, researcher, and creative thinker currently exploring the intersections of psychology, technology, and education. This website is a space to share my projects, writing, and ideas.\nCurrently I am student from University of Waterloo, majoring in Psychology, minoring in Human Resources and doing Research Intensive Program\nPlease check out my blog posts for all the HR or research practices and case studies I conducted!\nFor more information: 🔗 Connect with me on LinkedIn"
   },
   {
-    "objectID": "blog.html#posts",
-    "href": "blog.html#posts",
-    "title": "Blog",
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Index",
     "section": "",
-    "text": "First Post"
+    "text": "Hi, I’m Eda Ozkaya, who is a passionate learner, researcher, and creative thinker currently exploring the intersections of psychology, technology, and education. This website is a space to share my projects, writing, and ideas.\nCurrently I am student from University of Waterloo, majoring in Psychology, minoring in Human Resources and doing Research Intensive Program\nPlease check out my blog posts for all the HR or research practices and case studies I conducted!\nFor more information: 🔗 Connect with me on LinkedIn"
   },
   {
-    "objectID": "link.html",
-    "href": "link.html",
-    "title": "Website Link",
+    "objectID": "posts/first-post.html",
+    "href": "posts/first-post.html",
+    "title": "Why I am Starting this Blog",
     "section": "",
-    "text": "Click here to view my website:\nMy website"
+    "text": "Why I am Starting this Blog. This Blog is going to be used for my thoughts and to think out loud.\nI am starting this to give myself permission to explore ideas that are not fully formed, maybe questions or research questions I might have.\nI plan to write about questions I do not have answers to, about things that might not yet have answers. Maybe reflective, analytical or even personal. I will try to be honest in my attempts.\nThis is not a place for polished arguments or final conclusions. I will place my curiosities and patterns I notice. If you are reading this, you are welcome to think alongside me. No need to agree or debate not to process and maybe have your own thoughts."
   },
   {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "Blog",
+    "objectID": "posts/second-post.html",
+    "href": "posts/second-post.html",
+    "title": "GG Plot Practice",
     "section": "",
-    "text": "GG Plot Practice\n\n\n\n\n\n\ngraph\n\n\nchart\n\n\n\n\n\n\n\n\n\nFeb 10, 2026\n\n\nEda Ozkaya\n\n\n\n\n\n\n\n\n\n\n\n\nWhy I am Starting this Blog\n\n\n\n\n\n\nthoughts\n\n\nmeta\n\n\n\n\n\n\n\n\n\nJan 27, 2026\n\n\nEda Ozkaya\n\n\n\n\n\n\nNo matching items"
+    "text": "Me and a friend worked on a ggplot, learnt how to code and also tried to fold code. These are the results. From the ggplot examples, we are choosing the lollipop chart. Here is the link: [R code] (https://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html#Lollipop%20Chart)\n\n\nCode\n#│ code-fold: true\n#│ code-summary: \"Show the code\"\nlibrary(ggplot2)\ntheme_set(theme_bw())\n\ncty_mpg &lt;- data.frame(\n  make = c(\"Chevrolet\", \"Audi\", \"Toyota\", \"Honda\"),\n  mileage = c(15, 17.5, 18, 24)\n)\n\nggplot(cty_mpg, aes(x = make, y = mileage)) + \n  geom_point(size = 3) + \n  geom_segment(aes(x = make,\n                   xend = make,\n                   y = 0,\n                   yend = mileage)) + \n  labs(title = \"Lollipop Chart\", \n       subtitle = \"Make Vs Avg. Mileage\", \n       caption = \"source: mpg\") + \n  theme(axis.text.x = element_text(angle = 65, vjust = 0.6))"
   }
 ]
